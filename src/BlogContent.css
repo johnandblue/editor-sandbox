@@ -1,0 +1,14 @@
+.button {
+  width: 8rem;
+  height: 3rem;
+}
+
+.container-child {
+  height: 5rem;
+  width: 50rem;
+  background-color: blue;
+}
+
+.blogContent {
+  width: 50%;
+}

@@ -1,0 +1,20 @@
+.button {
+  width: 8rem;
+  height: 3rem;
+}
+
+.container-child {
+  height: 5rem;
+  width: 5rem;
+  background-color: blue;
+}
+
+.blogContainer {
+  margin-top: 5rem;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+}
+.blogContent {
+  width: 50%;
+}
