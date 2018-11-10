@@ -18,11 +18,6 @@ import { convertToRaw } from 'draft-js'
         var markdownString = draftToMarkdown(rawObject);
         // const block = content.getBlockForKey(selection.getStartKey());
         // const text = block.getText();
-        // console.log('selection', selection );
-        // console.log('content', content );
-        console.log('markdownString: ', markdownString );
-        // console.log('block', block );
-        // console.log('text', text );
         props.onChangeComponent(markdownString);
       });
     };

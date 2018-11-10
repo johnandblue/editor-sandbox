@@ -1,15 +1,16 @@
-import contentful from 'contentful-management';
-import config from '../config';
+import { createClient } from 'contentful-management';
+import config from './config';
 
 const spaceId = config.spaceId;
 const token = config.cmaToken;
 
 
-const client = contentful.createClient({
+const client = createClient({
   accessToken: token,
 });
 
 export const createNewsPage = (blogPageObj) => {
+  console.log('connecting to cms...');
   return client
     .getSpace(spaceId)
     .then(space => space.getEnvironment('master'))

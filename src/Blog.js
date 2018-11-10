@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
 import BlogContent from './BlogContent';
-import { createNewsPage } from './api';
+// import { createNewsPage } from './api';
 import './Blog.css';
 
 class CmsCreateNewsPage extends Component {
@@ -27,7 +27,9 @@ class CmsCreateNewsPage extends Component {
  }
 
  submitBlog = () => {
-   createNewsPage(this.state.entry);
+   console.log('Entry submited: ', this.state.entry);
+   // uncomment to post to api
+   // createNewsPage(this.state.entry);
   }
 
   render() {
